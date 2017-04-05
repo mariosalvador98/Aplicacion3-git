@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tercera Aplicación</title>
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app3.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  
+  
+</head>
+
+<body>
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONTAMINACION</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Definición</h1>
+     <div>
+      <p>1.Acción de contaminar o contaminarse.<br>
+"la contaminación atmosférica es uno de los problemas actuales con que se enfrentan las grandes ciudades"<br><br>
+2.Efecto de contaminar o contaminarse.<br>
+"la contaminación o polución del aire y el agua es la consecuencia inmediata de la industrialización y tecnificación de la vida"</p>
+      <br>
+     </div>
+     <div>
+       <img src="imagenes/contaminacion.png" width="200" height="auto">
+     </div>
+    </div>
+   </div>
+   <div>
+     <ul dta-role="listview" datatheme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>TIPOS DE CONTAMINACION</h2>
+         <p>Se muestran los tipos de contaminación</p>
+       </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>CONSECUENCIAS</h2>
+          <p>Se muestran las consecuencias de la contaminación</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>LAS 3 R</h2>
+           <p>Se muestra información sobre las 3R (Reutiliza, Reduce, Recicla)</p>
+         </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>MEDIDAS PREVENTIVAS O CORRECTIVAS</h2>
+           <p>Se muestran alternativas para cuidar el medio ambiente</p>
+         </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>CONTAMINACION EN MI ENTORNO</h2>
+           <p>Se muestran fotos de contaminación en mi entorno</p>
+         </a>
+        </li>
+        </ul>
+        </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <img src="imagenes/logo.ico" width"30" height="30">
+          </div>
+          <div>
+            <h4>Aplicación Tres</h4>
+            <h4>Mario Salvador Solís</h4>
+          </div>
+         </div>
+        </div>
+        <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>TIPOS DE CONTAMINACION</h1>
+         </div>
+         <div data-role="content" align="center">
+          <div>
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Aire</h1>
+     <div>
+      <p>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas.</p>
+      <br>
+      <img src="imagenes/caire.png" width="200" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Agua</h1>
+     <div>
+      <p>La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</p>
+      <br>
+      <img src="imagenes/cagua.png" width="200" height="auto">
+     </div>
+     </div>
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Suelo</h1>
+     <div>
+      <p>La contaminación del suelo es una degradación de la calidad del suelo asociada a la presencia de sustancias químicas.</p>
+      <br>
+      <img src="imagenes/csuelo.png" width="200" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Visual</h1>
+     <div>
+      <p>
+La contaminación visual es todo aquello que afecta o perturba la visualización de una determinada zona o rompe la estética del paisaje. Por desgracia cada vez nos encontramos más con este problema tanto en las grandes ciudades como en las zonas rurales</p>
+      <br>
+      <img src="imagenes/cvisual.png" width="200" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Acústica</h1>
+     <div>
+      <p>El término "contaminación acústica" hace referencia al ruido (entendido como sonido excesivo y molesto), provocado por las actividades humanas (tráfico, industrias, locales de ocio, aviones,barcos, entre otros.) que produce efectos negativos sobre la salud auditiva, física y mental de los seres vivos.</p>
+      <br>
+      <img src="imagenes/cacustica.png" width="200" height="auto">
+     </div>
+     </div>
+          </div>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Tres, MSS</h4>
+         </div>
+        </div>
+        
+         <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>CONSECUENCIAS DE LA CONTAMINACION</h1>
+         </div>
+         <div>
+            <div data-role="collapsible" data-content-theme="false">
+    <h1>Para las personas</h1>
+     <div>
+      <p>20.000 personas mueren al año en España por culpa de la contaminación ambiental. Un dato clave para entender la magnitud del problema. Los gases contaminantes son tóxicos, y sus efectos en nuestra salud van de las irritaciones en ojos o vías respiratorias a las migrañas, fatigas o enfermedades cardiovasculares. Cuando las partículas de polvo y humo llegan a nuestros pulmones pueden provocar daños muy graves.</p>
+      <br>
+      <img src="imagenes/contapersonas.png" width="200" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Cambio climático</h1>
+     <div>
+      <p>El CO2 está presente en la atmósfera de forma natural, pero el gran aumento de emisiones y su concentración fruto de la quema de combustibles fósiles acentúa los efectos del efecto invernadero. La temperatura está subiendo y el cambio climático ya está aquí, con consecuencias dramáticas para las personas, aumentando la violencia de fenómenos meteorológicos como los huracanes o la sequía</p>
+      <br>
+      <img src="imagenes/cambio-climatico.png" width="200" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Para el suelo</h1>
+     <div>
+      <p>La contaminación de los suelos hace que la siembra sea imposible, lo que tiene un doble efecto. Por una parte, hay escasez de alimentos, y por la otra el clima se ve afectado debido a la ausencia de plantas. La deforestación es otro de los efectos de la contaminación de los suelos, ya que se gana terreno al bosque para reemplazar los terrenos perdidos. Los vertederos al aire libre o cementerios nucleares son buenos ejemplos de contaminación del suelo.</p>
+      <br>
+      <img src="imagenes/contasuelopng.png" width="250" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Para la flora y fauna</h1>
+     <div>
+      <p>Las plantas ven como la polución afecta su crecimiento, y muchas especies no han podido adaptarse a la escasez de lluvias, la contaminación del aire o el agua, etc., lo que ha supuesto su desaparición y la aceleración de la desertificación. En cuanto a los animales, muchas especies terrestres han visto alterado su hábitat por culpa de la contaminación ambiental, han perdido sus fuentes de alimentos, etc. En ocasiones son acciones hechas a propósito que han llevado a algunas especies al peligro de extinción.</p>
+      <br>
+      <img src="imagenes/contafyf.png" width="250" height="auto">
+     </div>
+     </div>
+         </div>
+         <div data-role="content" align="center">
+          <div>
+          <p>Todo esto provoca el actual fenómeno problemático que preocupa a todo el mundo, conocido como: <h2>Calentamiento global</h2></p>
+           <div data-role="collapsible" data-content-theme="false">
+    <h1>¿Qué es?</h1>
+     <div>
+      <p>El calentamiento global es un aumento, en el tiempo, de la temperatura media de la atmósfera terrestre y de los océanos. Se postula que la temperatura se ha elevado desde finales del siglo XIX debido a la actividad humana, principalmente por las emisiones de CO2 que incrementaron el efecto invernadero.</p>
+      <br>
+      <img src="imagenes/calentamiento-global.png" width="200" height="auto">
+     </div>
+     </div>
+          </div>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Tres, MSS</h4>
+         </div>
+          </div>
+       </div>
+       
+       <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>LAS 3 R</h1>
+         </div>
+         <div data-role="content" align="center">
+          <div>
+          <p>Las “3R” de la ecología, Reducir, Reutilizar y Reciclar, dan nombre a una propuesta fomentada inicialmente por la organización no gubernamental GreenPeace, que promueve 3 pasos básicos para disminuir la producción de residuos y contribuir con ello a la protección y conservación del medio ambiente.</p>
+          <img src="imagenes/3r.png" width="200" height="auto">
+            <div data-role="collapsible" data-content-theme="false">
+    <h1>Reducir</h1>
+     <div>
+      <p>Cuando hablamos de reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, y a la vez con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo la misma cantidad de producto pero menos envases, no pedir bolsas en los supermercados a menos que sea necesario, reducir el consumo de papel, etc. </p>
+      <br>
+      <img src="imagenes/reducir.jpg" width="250" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Reutilizar</h1>
+     <div>
+      <p>Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas, dándole una vida útil a embalajes o materiales que usamos día a día y darles un uso lo más prolongado posible antes de que llegue la hora de deshacernos de ellos definitivamente, disminuyendo así el volumen de la basura y reduciendo el impacto en el medio ambiente. </p>
+      <br>
+      <img src="imagenes/reutilizar.jpg" width="250" height="auto">
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Reciclar</h1>
+     <div>
+      <p>Ésta es una de las R más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. Por tanto se requiere el uso de personal y energía para someter los materiales al proceso necesario para su reutilización. Esto significa que mediante el reciclaje se reduce de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, la generación de basura "nueva", sin embargo hay que recordar que al reciclar se gasta mucha energía y se contamina al reprocesar los residuos. 
+</p>
+      <br>
+      <img src="imagenes/reciclar.jpg" width="250" height="auto">
+     </div>
+     </div>
+          </div>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Tres, MSS</h4>
+         </div>
+          </div>
+       </div>
+       
+       <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>MEDIDAS PREVENTIVAS O CORRECTIVAS</h1>
+         </div>
+         <div data-role="content" align="center">
+          <div>
+            <div data-role="collapsible" data-content-theme="false">
+    <h1>Limpiar áreas verdes</h1>
+     <div>
+      <img src="imagenes/laverdes.png" width="250" height="auto">
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Depositar la basura en su lugar</h1>
+     <div>
+      <img src="imagenes/depobasura.png" width="250" height="auto">
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Ahorrar energía eléctrica</h1>
+     <div>
+      <img src="imagenes/aelectricidad.png" width="250" height="auto"
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Reciclar</h1>
+     <div>
+      <img src="imagenes/reciclar2.png" width="250" height="auto">
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Cuidar el agua (¡NO! desperdiciarla)</h1>
+     <div>
+      <img src="imagenes/ahorraragua.png" width="250" height="auto">
+      <br>
+     </div>
+     </div>
+          </div>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Tres, MSS</h4>
+         </div>
+          </div>
+       </div>
+       
+        <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>CONTAMINACION EN MI ENTORNO</h1>
+         </div>
+         <div data-role="content" align="center">
+          <div>
+          <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacion_agua.jpg" alt="contaminacion_agua" title="contaminacion_agua" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacion_aire.jpg" alt="contaminacion_aire" title="contaminacion_aire" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacion_auditiva.jpg" alt="contaminacion_auditiva" title="contaminacion_auditiva" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/contaminacion_suelo.jpg" alt="jquery carousel" title="contaminacion_suelo" id="wows1_3"/></a></li>
+		<li><img src="data1/images/contaminacion_visual.jpg" alt="contaminacion_visual" title="contaminacion_visual" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="contaminacion_agua"><span><img src="data1/tooltips/contaminacion_agua.jpg" alt="contaminacion_agua"/>1</span></a>
+		<a href="#" title="contaminacion_aire"><span><img src="data1/tooltips/contaminacion_aire.jpg" alt="contaminacion_aire"/>2</span></a>
+		<a href="#" title="contaminacion_auditiva"><span><img src="data1/tooltips/contaminacion_auditiva.jpg" alt="contaminacion_auditiva"/>3</span></a>
+		<a href="#" title="contaminacion_suelo"><span><img src="data1/tooltips/contaminacion_suelo.jpg" alt="contaminacion_suelo"/>4</span></a>
+		<a href="#" title="contaminacion_visual"><span><img src="data1/tooltips/contaminacion_visual.jpg" alt="contaminacion_visual"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          </div>
+          <div>
+            <h2>PROPUESTAS PARA REDUCIR LA CONTAMINACION.</h2><br>
+            <p>Debido a lo que observé cuando salí a explorar en el medio ambiente para la recolección de fotografías que mostraran el nivel de contaminació en el medio que me rodea, propongo lo siguiente:</p><br>
+            </div>
+            <div>
+            <ul id="propuestas">
+            <li>Recolectar PET de rios y lagos</li>
+            <li>Recolectar la basura de campos sembrados</li>
+            <li>Reutilizar nuestros envases plásticos</li>
+            <li>Organizar la basura correctamente al depositarla</li>
+            <li>Reducir al máximo el uso de agua</li>
+            <li>No lavar ropa en los riachuelos</li>
+            <li>Reportar con las autoridades a quien queme basura</li>
+            <li><em>Hacer ¡CONSUENCIA! en los demás</em></li>
+            </ul>
+          </div>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Tres, MSS</h4>
+         </div>
+          </div>
+       </div>
+       
+       
+</body>
+</html>
