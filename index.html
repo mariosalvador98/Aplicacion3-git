@@ -16,11 +16,32 @@
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/acciones.js"></script>
   <script src="phonegap.js"></script>
-  
-  
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/contaminacion2.png')">
 
   <div data-role="page" id="Principal" data-theme="b">
    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
@@ -37,8 +58,8 @@
       <br>
      </div>
      <div>
-       <img src="imagenes/contaminacion.png" width="200" height="auto">
-     </div>
+       
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/contaminacion2.png',1)"><img src="imagenes/contaminacion.png" width="200" height="auto" id="Image30"></a></div>
     </div>
    </div>
    <div>
@@ -288,6 +309,71 @@ La contaminación visual es todo aquello que afecta o perturba la visualización
      <div>
       <img src="imagenes/ahorraragua.png" width="250" height="auto">
       <br>
+     </div>
+     </div>
+     <br>
+     <div>
+      <h3>ORGANIZACIONES QUE PROTEGEN AL MEDIO AMBIENTE</h3>
+        <div data-role="collapsible" data-content-theme="false">
+    <h1>Greenpeace</h1>
+     <div>
+     <p>
+       Sin lugar a dudas esta ONG fundada en 1971 y con sede en 40 países es la más conocida de todas. Sus iniciativas son notorias y tienen una gran influencia a escala internacional. ¿Su objetivo? El de proteger el equilibrio ecológico de todas partes del mundo, aunque son notables sus acciones por la defensa de la Antártida.
+     </p>
+     <br>
+      <a href="https://greenpeace.mx" target="_self"><img src="imagenes/greenpeace.png" width="200" height="auto"></a>
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>WWF</h1>
+     <div>
+     <p>
+        (World Wildlife Fund): Este Fondo Mundial Para la Naturaleza comenzó su andadura en 1961, en principio con el objetivo de defender  la vida silvestre de cada hábitat. Con el paso del tiempo, esta ONG ha ampliado su campo de acción  hasta  la defensa por la conservación de los recursos naturales renovables, al tiempo que incide en la necesidad de preservar la diversidad biológica, acabar con la contaminación. Como Greenpeace, WWF cuenta con una gran proyección internacional y cuenta incluso con organizaciones asociadas.
+     </p>
+     <br>
+      <a href="http://www.wwf.org.mx" target="_self"><img src="imagenes/wwf.png" width="200" height="auto"></a>
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>Earth Action</h1>
+     <div>
+     <p>
+       Según reza en su página web esta organización se creó en 1992 con el objetivo de “informar e inspirar a la gente de todas partes en lo que respecta a la preocupación, la pasión y la indignación a través de la acción significativa para un mundo más justo, pacífico y sostenible“. En definitiva, se trata de una ONG cuyas acciones se encuentran encaminadas a que personas de todo el mundo exijan a sus gobiernos soluciones para los problemas medioambientales. Presente en multitud de países con 1.900 asociados.
+
+     </p>
+     <br>
+      <a href="http://www.earthaction.org/" target="_self"><img src="imagenes/earthaction.png" width="200" height="auto"></a>
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>PNUMA</h1>
+     <div>
+     <p>
+       (Programa de Naciones Unidas para el Medio Ambiente): Tiene como objetivo ofrecer información contrastada y servir de inspiración para que la gente comience a preocuparse por el medio ambiente. El lema del PNUMA parece ser el hecho de canalizar la indignación ciudadana a través de acciones importantes que hagan el mundo más sostenible. Para ello se centran en tres áreas localizadas, como son el cambio climático, los desastres y conflictos, el manejo de ecosistemas, la gobernanza ambiental, las sustancias dañinas y la eficacia de recursos.
+     </p>
+     <br>
+      <a href="http://web.unep.org" target="_self"><img src="imagenes/pnuma.png" width="200" height="auto"></a>
+      <br>
+     </div>
+     </div>
+     
+      <div data-role="collapsible" data-content-theme="false">
+    <h1>The Nature Conservancy</h1>
+     <div>
+     <p>
+       Como Greenpeace, se centran en acciones a gran escala que necesitan una solución inmediata. Fundada en 1951, cuenta ya con más de un millón de socios, gracias a la ayuda de los cuales se ha podido conservar más de 119 millones de acres de tierra y 5.000 millas de ríos en todo el mundo, incidiendo también en la importancia de la conservación marina. Por otro lado, esta ONG está implicada con la lucha contra el cambio climático.
+     </p>
+     <br>
+      <a href="https://www.nature.org" target="_self"><img src="imagenes/tnconservancy.png" width="200" height="auto"></a>
+      <br>
+     </div>
+     </div>
      </div>
      </div>
           </div>
